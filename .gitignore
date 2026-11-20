@@ -1,0 +1,15 @@
+# 运行产物（工作台可随时重建，不入库）
+state/
+_verify/logs/
+_verify/shots/
+_verify/_roprobe/
+__pycache__/
+*.pyc
+.pytest_cache/
+pytest-cache-files-*/
+web/_shots/_edge*/
+web/_shots/*.tmp
+
+# 本地环境（cifkit 检出自带 .venv 时用 CIFKIT_ROOT 指过去，不要提交）
+.venv/
+venv/

@@ -1,0 +1,4 @@
+# cifkit 工作台后端：运行时零第三方依赖（stdlib only）
+# cifkit 本体及其依赖（pymatgen/ase/numpy/...）由 cifkit 仓库自己的环境提供；
+# 工作台只通过「进程内 import cifkit」或「子进程 python -m cifkit」调用它。
+-r ../requirements.txt

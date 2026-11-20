@@ -1,0 +1,8 @@
+# 默认按文本处理并统一 LF；二进制显式排除，避免行尾/合并改写。
+# 例外：Windows 批处理必须是 CRLF —— cmd.exe 对 LF 结尾的 .cmd 会把行尾当命令续行，
+# 中文注释会直接报 "not recognized"，双击启动就废了（本仓 start.cmd 的实测坑）。
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.png binary
+*.zip binary

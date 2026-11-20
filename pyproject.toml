@@ -1,0 +1,20 @@
+# cifkit-workbench 独立仓声明；仅声明本目录的包与测试标记。
+# 注意：运行时不需要安装（纯 stdlib）；这里存在是为了让 pytest 的 marker 与
+# 打包元数据有据可查，并作为独立仓的 pytest rootdir 配置。
+[project]
+name = "cifkit-workbench"
+version = "1.0.0"
+description = "cifkit 本地工作台后端（stdlib http.server + bridge）"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# 本机沙箱不允许 pytest 的 .pytest_cache 原子写（WinError 5）；缓存只是本地加速，
+# 关掉它让验收输出干净（不影响 --lf/--ff 之外的任何行为）。
+addopts = "-p no:cacheprovider"
+markers = [
+  "network: 需要外网（默认跳过；--run-network 打开）",
+  "slow: 端到端慢用例（默认跳过；--run-slow 打开）",
+  "e2e: 端到端集成",
+]
