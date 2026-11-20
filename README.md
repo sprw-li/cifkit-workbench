@@ -1,5 +1,7 @@
 # cifkit-workbench
 
+<https://github.com/sprw-li/cifkit-workbench> · MIT
+
 > 把 [cifkit](https://github.com/sprw-li/cifkit)（CIF 处理管线）包成**浏览器里的结构处理工作台**：
 > 一句话开管线 → 选型/修复/几何/导出/校验 → 产物下载与溯源。
 > 无构建、无 npm、断网能跑；界面复用已有的前端复用包 EduKit，来源与逐文件改动见
