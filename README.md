@@ -1,5 +1,9 @@
 # cifkit-workbench
 
+> **本仓是 cifkit 的交互面（保留面，2026-11-22 起）。** 结构管线本体与 skill 真源在
+> <https://github.com/sprw-li/cifkit>（`skills/cif-*`；本仓在那个库里以 `workbench/` 检出）。
+> 零安装入口就是本仓；改动与 issue 都欢迎直接提在这里。
+
 <https://github.com/sprw-li/cifkit-workbench> · MIT
 
 > 把 [cifkit](https://github.com/sprw-li/cifkit)（CIF 处理管线）包成**浏览器里的结构处理工作台**：
